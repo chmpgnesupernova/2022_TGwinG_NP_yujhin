@@ -56,7 +56,7 @@ def findDaesun(x1,y1,r1,x2,y2,r2):
     distance=pow((x1-x2)^2+(y1-y2)^2,1/2)
     if distance>r1+r2:
         return("0")
-    elif distance==r1+r2:
+    elif distance==r1+r2 or distance+r1==r2 or distance+r2==r1:
         return("1")
     elif distance<r1+r2:
         if distance+r2<r1 or distance+r1<r2:
